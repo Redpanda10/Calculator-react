@@ -19,10 +19,12 @@ export default function App(){
       setText(eval(text))
   }catch(err){
     setText(err)
+    console.log(err)
   }
 }
 
   return <>
+  <div className="board">
         <h1>Calculator Lets make it!</h1>
         <div className="main-calculator">
           <div className='display'>{text}</div>
@@ -57,7 +59,7 @@ export default function App(){
 
           </div>
         </div>
-  
+ </div> 
   
   </>
 }
